@@ -2,20 +2,24 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import ApolloClient from 'apollo-boost'
-import { ApolloProvider }  from '@apollo/react-hooks'
+import { ApolloProvider } from '@apollo/react-hooks'
 import { BrowserRouter } from "react-router-dom";
+import { API_URL } from './config/index';
+import CssBaseline from '@mui/material/CssBaseline';
+
 
 
 const client: any = new ApolloClient({
-  uri: 'http://localhost:5000/graphql'
+  uri: API_URL + "graphql"
 })
 
 ReactDOM.render(
-    <ApolloProvider client={client}> 
+  <ApolloProvider client={client}>
     <BrowserRouter>
+      <CssBaseline />
       <App />
     </BrowserRouter>
-    
-    </ApolloProvider>,
+
+  </ApolloProvider>,
   document.getElementById('root')
 )
