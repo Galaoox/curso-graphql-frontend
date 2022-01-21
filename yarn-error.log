@@ -1,0 +1,64 @@
+Arguments: 
+  /Users/galaoox/.nvm/versions/node/v17.3.1/bin/node /Users/galaoox/.nvm/versions/node/v17.3.1/bin/yarn add @apollo/react-hooks apollo-boost
+
+PATH: 
+  /Users/galaoox/.nvm/versions/node/v17.3.1/bin:/Users/galaoox/.nvm/versions/node/v16.13.2/bin:/Users/galaoox/.nvm/versions/node/v17.3.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/galaoox/.nvm/versions/node/v17.3.1/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.3.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@%5E4.0.0: Request "https://registry.yarnpkg.com/@%5E4.0.0" returned a 405
+      at Request.params.callback [as _callback] (/Users/galaoox/.nvm/versions/node/v17.3.1/lib/node_modules/yarn/lib/cli.js:67038:18)
+      at Request.self.callback (/Users/galaoox/.nvm/versions/node/v17.3.1/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/Users/galaoox/.nvm/versions/node/v17.3.1/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/Users/galaoox/.nvm/versions/node/v17.3.1/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "": "^4.0.0",
+      "@emotion/react": "^11.7.1",
+      "@emotion/styled": "^11.6.0",
+      "@mui/icons-material": "^5.3.0",
+      "@mui/material": "^5.3.0",
+      "@mui/x-data-grid": "^5.2.2",
+      "dotenv": "^14.2.0",
+      "graphql": "^15.8.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "6"
+    },
+    "devDependencies": {
+      "@types/react": "^17.0.33",
+      "@types/react-dom": "^17.0.10",
+      "@vitejs/plugin-react": "^1.0.7",
+      "typescript": "^4.4.4",
+      "vite": "^2.7.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
